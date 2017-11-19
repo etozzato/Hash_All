@@ -31,7 +31,7 @@ module HashAll
     def self.hash_all(hash_key='id', args={})
       fetch = args.delete(:fetch)
 
-      collection = respond_to?(:all) ? :all(args) : find(:all, args)
+      collection = respond_to?(:all) ? all(args) : find(:all, args)
       return {} if collection.empty?
       collection.each.inject({}) { |hash,obj| hash[obj.send(hash_key)] = (fetch.nil? ? obj : obj.send(fetch)); hash}
     end
