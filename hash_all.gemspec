@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Wrapper for find(:all) that returns Hash}
   s.description = <<-EOF
   Wrapper/helper for ActiveRecord find(:all, *args).\n
-  Returns a collection of objects injected into a Hash. 
+  Returns a collection of objects injected into a Hash.
   EOF
 
   s.rubyforge_project = "hash_all"
